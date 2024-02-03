@@ -12,7 +12,7 @@ export class AppComponent {
   public displayDetails(): void {
     let date: Date = new Date();
 
-    this.display = true;
+    this.display = !this.display;
     this.timestampClicks.push(date.toTimeString());
   }
 }
